@@ -1,7 +1,7 @@
 
 /* Scripts del proyecto */
 
-/* Validaacion del formulario */
+/* Validacion del formulario */
 (() => {
     'use strict'
   
