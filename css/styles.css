@@ -286,6 +286,9 @@ html, body{
 
 @media (min-width: 576px) { 
     .container-resp{width:540px;}
+
+    
+
 }
 
 @media (max-width:767px){
@@ -310,6 +313,7 @@ html, body{
         }
         .formContacto{
             width: 100%;
+            margin-bottom: 20px;
         }
         .mapHome{
             width: 100%;
