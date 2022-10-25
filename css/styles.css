@@ -304,6 +304,16 @@ html, body{
     .news-4,.news-5,.news-6{
         width: 100%;
     }
+    #contacto .container-resp{
+        display: flex;
+        flex-direction: column;
+        }
+        .formContacto{
+            width: 100%;
+        }
+        .mapHome{
+            width: 100%;
+        }
 }
 
 @media (min-width: 768px) { 
