@@ -35,6 +35,21 @@ html, body{
     padding-left: 15px;
     padding-right: 15px;
 }
+/* grillas */
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    /* 2columnas */
+    .column-6{
+        width: 50%;
+    }
+    .column-4{
+        width: 33%;
+    }
+    .column-3{
+        width: 25%;
+    }
 
 
 /* Header */
@@ -213,6 +228,19 @@ html, body{
             width: 30%;
         }
 
+/* Staff */
+    #staff{
+        border-top: 2px solid red;
+    }
+    .frase-staff{
+        font-size: 2.5em;
+        font-style: italic;
+        }
+        .frase-staff::after,.frase-staff::before{
+            content: '"';
+        }
+
+
 /* Contacto */
 
 #contacto{
@@ -286,38 +314,52 @@ html, body{
 
 @media (min-width: 576px) { 
     .container-resp{width:540px;}
+}
 
-    
-
+@media (max-width:576px){
+    .footer{
+        text-align: center;
+    } 
 }
 
 @media (max-width:767px){
-    .news-main{
-        display: block;
+.news-main{
+    display: block;
+}
+.news-left{
+    width: 100%;
+}
+.news-right{
+    width: 100%;
+}
+.news-down{
+    flex-direction: column;
+}
+.news-4,.news-5,.news-6{
+    width: 100%;
+}
+#contacto .container-resp{
+    display: flex;
+    flex-direction: column;
     }
-    .news-left{
+    .formContacto{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .mapHome{
         width: 100%;
     }
-    .news-right{
-        width: 100%;
-    }
-    .news-down{
-        flex-direction: column;
-    }
-    .news-4,.news-5,.news-6{
-        width: 100%;
-    }
-    #contacto .container-resp{
+
+    .fila{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
         }
-        .formContacto{
-            width: 100%;
-            margin-bottom: 20px;
-        }
-        .mapHome{
+        /* 2columnas */
+        .column-6, .column-4,.column-3{
             width: 100%;
         }
+
 }
 
 @media (min-width: 768px) { 
